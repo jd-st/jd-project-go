@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/packages/param"
 )
 
 type Struct struct {

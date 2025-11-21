@@ -1,7 +1,7 @@
 package jdproject
 
 import (
-	"github.com/stainless-sdks/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/packages/param"
 	"io"
 	"time"
 )

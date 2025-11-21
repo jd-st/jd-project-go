@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/jd-project-go"
-	"github.com/stainless-sdks/jd-project-go/internal"
-	"github.com/stainless-sdks/jd-project-go/option"
+	"github.com/jd-st/jd-project-go"
+	"github.com/jd-st/jd-project-go/internal"
+	"github.com/jd-st/jd-project-go/option"
 )
 
 type closureTransport struct {

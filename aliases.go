@@ -3,9 +3,9 @@
 package jdproject
 
 import (
-	"github.com/stainless-sdks/jd-project-go/internal/apierror"
-	"github.com/stainless-sdks/jd-project-go/packages/param"
-	"github.com/stainless-sdks/jd-project-go/shared"
+	"github.com/jd-st/jd-project-go/internal/apierror"
+	"github.com/jd-st/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/shared"
 )
 
 // aliased to make [param.APIUnion] private when embedding

@@ -3,7 +3,7 @@ package param
 import (
 	"encoding/json"
 	"fmt"
-	shimjson "github.com/stainless-sdks/jd-project-go/internal/encoding/json"
+	shimjson "github.com/jd-st/jd-project-go/internal/encoding/json"
 	"time"
 )
 

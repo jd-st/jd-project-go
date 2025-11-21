@@ -11,13 +11,13 @@ import (
 	"net/url"
 	"slices"
 
-	"github.com/stainless-sdks/jd-project-go/internal/apijson"
-	"github.com/stainless-sdks/jd-project-go/internal/apiquery"
-	shimjson "github.com/stainless-sdks/jd-project-go/internal/encoding/json"
-	"github.com/stainless-sdks/jd-project-go/internal/requestconfig"
-	"github.com/stainless-sdks/jd-project-go/option"
-	"github.com/stainless-sdks/jd-project-go/packages/param"
-	"github.com/stainless-sdks/jd-project-go/packages/respjson"
+	"github.com/jd-st/jd-project-go/internal/apijson"
+	"github.com/jd-st/jd-project-go/internal/apiquery"
+	shimjson "github.com/jd-st/jd-project-go/internal/encoding/json"
+	"github.com/jd-st/jd-project-go/internal/requestconfig"
+	"github.com/jd-st/jd-project-go/option"
+	"github.com/jd-st/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/packages/respjson"
 )
 
 // UserService contains methods and other services that help with interacting with

@@ -9,10 +9,10 @@ import (
 	"net/http"
 	"slices"
 
-	shimjson "github.com/stainless-sdks/jd-project-go/internal/encoding/json"
-	"github.com/stainless-sdks/jd-project-go/internal/requestconfig"
-	"github.com/stainless-sdks/jd-project-go/option"
-	"github.com/stainless-sdks/jd-project-go/shared"
+	shimjson "github.com/jd-st/jd-project-go/internal/encoding/json"
+	"github.com/jd-st/jd-project-go/internal/requestconfig"
+	"github.com/jd-st/jd-project-go/option"
+	"github.com/jd-st/jd-project-go/shared"
 )
 
 // StoreOrderService contains methods and other services that help with interacting

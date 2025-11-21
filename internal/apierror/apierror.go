@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/stainless-sdks/jd-project-go/internal/apijson"
-	"github.com/stainless-sdks/jd-project-go/packages/respjson"
+	"github.com/jd-st/jd-project-go/internal/apijson"
+	"github.com/jd-st/jd-project-go/packages/respjson"
 )
 
 // Error represents an error that originates from the API, i.e. when a request is

@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/jd-project-go
+module github.com/jd-st/jd-project-go
 
 go 1.22
 

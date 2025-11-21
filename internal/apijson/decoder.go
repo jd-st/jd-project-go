@@ -7,7 +7,7 @@ package apijson
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stainless-sdks/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/packages/param"
 	"reflect"
 	"strconv"
 	"sync"
