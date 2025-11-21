@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"slices"
 
-	"github.com/stainless-sdks/jd-project-go/internal/requestconfig"
-	"github.com/stainless-sdks/jd-project-go/option"
+	"github.com/jd-st/jd-project-go/internal/requestconfig"
+	"github.com/jd-st/jd-project-go/option"
 )
 
 // StoreService contains methods and other services that help with interacting with

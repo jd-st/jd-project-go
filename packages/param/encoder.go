@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	shimjson "github.com/stainless-sdks/jd-project-go/internal/encoding/json"
+	shimjson "github.com/jd-st/jd-project-go/internal/encoding/json"
 
 	"github.com/tidwall/sjson"
 )

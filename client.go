@@ -8,8 +8,8 @@ import (
 	"os"
 	"slices"
 
-	"github.com/stainless-sdks/jd-project-go/internal/requestconfig"
-	"github.com/stainless-sdks/jd-project-go/option"
+	"github.com/jd-st/jd-project-go/internal/requestconfig"
+	"github.com/jd-st/jd-project-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with

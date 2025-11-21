@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stainless-sdks/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/packages/param"
 )
 
 var encoders sync.Map // map[encoderEntry]encoderFunc
