@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/stainless-sdks/jd-project-go/internal/apijson"
-	"github.com/stainless-sdks/jd-project-go/packages/param"
-	"github.com/stainless-sdks/jd-project-go/packages/respjson"
+	"github.com/jd-st/jd-project-go/internal/apijson"
+	"github.com/jd-st/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/packages/respjson"
 )
 
 // aliased to make [param.APIUnion] private when embedding

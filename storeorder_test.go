@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/jd-project-go"
-	"github.com/stainless-sdks/jd-project-go/internal/testutil"
-	"github.com/stainless-sdks/jd-project-go/option"
-	"github.com/stainless-sdks/jd-project-go/shared"
+	"github.com/jd-st/jd-project-go"
+	"github.com/jd-st/jd-project-go/internal/testutil"
+	"github.com/jd-st/jd-project-go/option"
+	"github.com/jd-st/jd-project-go/shared"
 )
 
 func TestStoreOrderNewWithOptionalParams(t *testing.T) {

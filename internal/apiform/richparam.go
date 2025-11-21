@@ -1,7 +1,7 @@
 package apiform
 
 import (
-	"github.com/stainless-sdks/jd-project-go/packages/param"
+	"github.com/jd-st/jd-project-go/packages/param"
 	"mime/multipart"
 	"reflect"
 )

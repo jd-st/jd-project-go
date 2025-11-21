@@ -14,7 +14,7 @@ import (
 	"encoding"
 	"encoding/base64"
 	"fmt"
-	"github.com/stainless-sdks/jd-project-go/internal/encoding/json/shims"
+	"github.com/jd-st/jd-project-go/internal/encoding/json/shims"
 	"reflect"
 	"strconv"
 	"strings"

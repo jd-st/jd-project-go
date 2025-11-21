@@ -2,7 +2,7 @@
 
 <!-- x-release-please-start-version -->
 
-<a href="https://pkg.go.dev/github.com/stainless-sdks/jd-project-go"><img src="https://pkg.go.dev/badge/github.com/stainless-sdks/jd-project-go.svg" alt="Go Reference"></a>
+<a href="https://pkg.go.dev/github.com/jd-st/jd-project-go"><img src="https://pkg.go.dev/badge/github.com/jd-st/jd-project-go.svg" alt="Go Reference"></a>
 
 <!-- x-release-please-end -->
 
@@ -13,17 +13,25 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ## Installation
 
+<!-- x-release-please-start-version -->
+
 ```go
 import (
-	"github.com/stainless-sdks/jd-project-go" // imported as jdproject
+	"github.com/jd-st/jd-project-go" // imported as jdproject
 )
 ```
 
+<!-- x-release-please-end -->
+
 Or to pin the version:
 
+<!-- x-release-please-start-version -->
+
 ```sh
-go get -u 'github.com/stainless-sdks/jd-project-go@v0.0.1'
+go get -u 'github.com/jd-st/jd-project-go@v0.0.1'
 ```
+
+<!-- x-release-please-end -->
 
 ## Requirements
 
@@ -40,8 +48,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/stainless-sdks/jd-project-go"
-	"github.com/stainless-sdks/jd-project-go/option"
+	"github.com/jd-st/jd-project-go"
+	"github.com/jd-st/jd-project-go/option"
 )
 
 func main() {
@@ -268,7 +276,7 @@ client.Store.ListInventory(context.TODO(), ...,
 
 The request option `option.WithDebugLog(nil)` may be helpful while debugging.
 
-See the [full list of request options](https://pkg.go.dev/github.com/stainless-sdks/jd-project-go/option).
+See the [full list of request options](https://pkg.go.dev/github.com/jd-st/jd-project-go/option).
 
 ### Pagination
 
@@ -465,7 +473,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/jd-project-go/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/jd-st/jd-project-go/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 
