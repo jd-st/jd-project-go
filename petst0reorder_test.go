@@ -15,7 +15,7 @@ import (
 	"github.com/jd-st/jd-project-go/shared"
 )
 
-func TestPetstoreOrderNewWithOptionalParams(t *testing.T) {
+func TestPetst0reOrderNewWithOptionalParams(t *testing.T) {
 	t.Skip("Prism tests are disabled")
 	baseURL := "http://localhost:4010"
 	if envURL, ok := os.LookupEnv("TEST_API_BASE_URL"); ok {
@@ -28,7 +28,7 @@ func TestPetstoreOrderNewWithOptionalParams(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	_, err := client.Petstore.Orders.New(context.TODO(), jdproject.PetstoreOrderNewParams{
+	_, err := client.Petst0re.Orders.New(context.TODO(), jdproject.Petst0reOrderNewParams{
 		Order: shared.OrderParam{
 			ID:       jdproject.Int(10),
 			Complete: jdproject.Bool(true),
@@ -47,7 +47,7 @@ func TestPetstoreOrderNewWithOptionalParams(t *testing.T) {
 	}
 }
 
-func TestPetstoreOrderGet(t *testing.T) {
+func TestPetst0reOrderGet(t *testing.T) {
 	t.Skip("Prism tests are disabled")
 	baseURL := "http://localhost:4010"
 	if envURL, ok := os.LookupEnv("TEST_API_BASE_URL"); ok {
@@ -60,7 +60,7 @@ func TestPetstoreOrderGet(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	_, err := client.Petstore.Orders.Get(context.TODO(), 0)
+	_, err := client.Petst0re.Orders.Get(context.TODO(), 0)
 	if err != nil {
 		var apierr *jdproject.Error
 		if errors.As(err, &apierr) {
@@ -70,7 +70,7 @@ func TestPetstoreOrderGet(t *testing.T) {
 	}
 }
 
-func TestPetstoreOrderDelete(t *testing.T) {
+func TestPetst0reOrderDelete(t *testing.T) {
 	t.Skip("Prism tests are disabled")
 	baseURL := "http://localhost:4010"
 	if envURL, ok := os.LookupEnv("TEST_API_BASE_URL"); ok {
@@ -83,7 +83,7 @@ func TestPetstoreOrderDelete(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	err := client.Petstore.Orders.Delete(context.TODO(), 0)
+	err := client.Petst0re.Orders.Delete(context.TODO(), 0)
 	if err != nil {
 		var apierr *jdproject.Error
 		if errors.As(err, &apierr) {
