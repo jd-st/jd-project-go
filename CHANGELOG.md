@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0 (2025-11-27)
+
+Full Changelog: [v0.1.0...v0.2.0](https://github.com/jd-st/jd-project-go/compare/v0.1.0...v0.2.0)
+
+### Features
+
+* **api:** petstore -&gt; petst0re ([4eed91c](https://github.com/jd-st/jd-project-go/commit/4eed91cf3eecb0324ac7c226e50319239b79d58b))
+
 ## 0.1.0 (2025-11-27)
 
 Full Changelog: [v0.0.2...v0.1.0](https://github.com/jd-st/jd-project-go/compare/v0.0.2...v0.1.0)

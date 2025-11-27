@@ -28,7 +28,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/jd-st/jd-project-go@v0.1.0'
+go get -u 'github.com/jd-st/jd-project-go@v0.2.0'
 ```
 
 <!-- x-release-please-end -->
@@ -56,7 +56,7 @@ func main() {
 	client := jdproject.NewClient(
 		option.WithAPIKey("My API Key"), // defaults to os.LookupEnv("PETSTORE_API_KEY")
 	)
-	order, err := client.Petstore.Orders.New(context.TODO(), jdproject.PetstoreOrderNewParams{})
+	order, err := client.Petst0re.Orders.New(context.TODO(), jdproject.Petst0reOrderNewParams{})
 	if err != nil {
 		panic(err.Error())
 	}
@@ -266,7 +266,7 @@ client := jdproject.NewClient(
 	option.WithHeader("X-Some-Header", "custom_header_info"),
 )
 
-client.Petstore.ListInventory(context.TODO(), ...,
+client.Petst0re.ListInventory(context.TODO(), ...,
 	// Override the header
 	option.WithHeader("X-Some-Header", "some_other_custom_header_info"),
 	// Add an undocumented field to the request body, using sjson syntax
@@ -297,14 +297,14 @@ When the API returns a non-success status code, we return an error with type
 To handle errors, we recommend that you use the `errors.As` pattern:
 
 ```go
-_, err := client.Petstore.ListInventory(context.TODO())
+_, err := client.Petst0re.ListInventory(context.TODO())
 if err != nil {
 	var apierr *jdproject.Error
 	if errors.As(err, &apierr) {
 		println(string(apierr.DumpRequest(true)))  // Prints the serialized HTTP request
 		println(string(apierr.DumpResponse(true))) // Prints the serialized HTTP response
 	}
-	panic(err.Error()) // GET "/petstore/inventory": 400 Bad Request { ... }
+	panic(err.Error()) // GET "/petst0re/inventory": 400 Bad Request { ... }
 }
 ```
 
@@ -322,7 +322,7 @@ To set a per-retry timeout, use `option.WithRequestTimeout()`.
 // This sets the timeout for the request, including all the retries.
 ctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
 defer cancel()
-client.Petstore.ListInventory(
+client.Petst0re.ListInventory(
 	ctx,
 	// This sets the per-retry timeout
 	option.WithRequestTimeout(20*time.Second),
@@ -357,7 +357,7 @@ client := jdproject.NewClient(
 )
 
 // Override per-request:
-client.Petstore.ListInventory(context.TODO(), option.WithMaxRetries(5))
+client.Petst0re.ListInventory(context.TODO(), option.WithMaxRetries(5))
 ```
 
 ### Accessing raw response data (e.g. response headers)
@@ -368,7 +368,7 @@ you need to examine response headers, status codes, or other details.
 ```go
 // Create a variable to store the HTTP response
 var response *http.Response
-response, err := client.Petstore.ListInventory(context.TODO(), option.WithResponseInto(&response))
+response, err := client.Petst0re.ListInventory(context.TODO(), option.WithResponseInto(&response))
 if err != nil {
 	// handle error
 }
