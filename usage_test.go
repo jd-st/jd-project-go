@@ -24,7 +24,7 @@ func TestUsage(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	order, err := client.Petst0re.Orders.New(context.TODO(), jdproject.Petst0reOrderNewParams{})
+	order, err := client.Petst00re.Orders.New(context.TODO(), jdproject.Petst00reOrderNewParams{})
 	if err != nil {
 		t.Fatalf("err should be nil: %s", err.Error())
 	}
