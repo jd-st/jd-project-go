@@ -15,60 +15,60 @@ import (
 	"github.com/jd-st/jd-project-go/shared"
 )
 
-// Petst000reOrderService contains methods and other services that help with
-// interacting with the jd-project API.
+// St0reOrderService contains methods and other services that help with interacting
+// with the jd-project API.
 //
 // Note, unlike clients, this service does not read variables from the environment
 // automatically. You should not instantiate this service directly, and instead use
-// the [NewPetst000reOrderService] method instead.
-type Petst000reOrderService struct {
+// the [NewSt0reOrderService] method instead.
+type St0reOrderService struct {
 	Options []option.RequestOption
 }
 
-// NewPetst000reOrderService generates a new service that applies the given options
-// to each request. These options are applied after the parent client's options (if
+// NewSt0reOrderService generates a new service that applies the given options to
+// each request. These options are applied after the parent client's options (if
 // there is one), and before any request-specific options.
-func NewPetst000reOrderService(opts ...option.RequestOption) (r Petst000reOrderService) {
-	r = Petst000reOrderService{}
+func NewSt0reOrderService(opts ...option.RequestOption) (r St0reOrderService) {
+	r = St0reOrderService{}
 	r.Options = opts
 	return
 }
 
 // Place a new order in the store
-func (r *Petst000reOrderService) New(ctx context.Context, body Petst000reOrderNewParams, opts ...option.RequestOption) (res *shared.Order, err error) {
+func (r *St0reOrderService) New(ctx context.Context, body St0reOrderNewParams, opts ...option.RequestOption) (res *shared.Order, err error) {
 	opts = slices.Concat(r.Options, opts)
-	path := "petst000re/order"
+	path := "st0re/order"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, body, &res, opts...)
 	return
 }
 
 // For valid response try integer IDs with value <= 5 or > 10. Other values will
 // generate exceptions.
-func (r *Petst000reOrderService) Get(ctx context.Context, orderID int64, opts ...option.RequestOption) (res *shared.Order, err error) {
+func (r *St0reOrderService) Get(ctx context.Context, orderID int64, opts ...option.RequestOption) (res *shared.Order, err error) {
 	opts = slices.Concat(r.Options, opts)
-	path := fmt.Sprintf("petst000re/order/%v", orderID)
+	path := fmt.Sprintf("st0re/order/%v", orderID)
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
 	return
 }
 
 // For valid response try integer IDs with value < 1000. Anything above 1000 or
 // nonintegers will generate API errors
-func (r *Petst000reOrderService) Delete(ctx context.Context, orderID int64, opts ...option.RequestOption) (err error) {
+func (r *St0reOrderService) Delete(ctx context.Context, orderID int64, opts ...option.RequestOption) (err error) {
 	opts = slices.Concat(r.Options, opts)
 	opts = append([]option.RequestOption{option.WithHeader("Accept", "*/*")}, opts...)
-	path := fmt.Sprintf("petst000re/order/%v", orderID)
+	path := fmt.Sprintf("st0re/order/%v", orderID)
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodDelete, path, nil, nil, opts...)
 	return
 }
 
-type Petst000reOrderNewParams struct {
+type St0reOrderNewParams struct {
 	Order shared.OrderParam
 	paramObj
 }
 
-func (r Petst000reOrderNewParams) MarshalJSON() (data []byte, err error) {
+func (r St0reOrderNewParams) MarshalJSON() (data []byte, err error) {
 	return shimjson.Marshal(r.Order)
 }
-func (r *Petst000reOrderNewParams) UnmarshalJSON(data []byte) error {
+func (r *St0reOrderNewParams) UnmarshalJSON(data []byte) error {
 	return json.Unmarshal(data, &r.Order)
 }
