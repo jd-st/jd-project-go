@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.4.0 (2025-12-16)
+
+Full Changelog: [v0.3.0...v0.4.0](https://github.com/jd-st/jd-project-go/compare/v0.3.0...v0.4.0)
+
+### Features
+
+* **api:** manual updates ([1edb777](https://github.com/jd-st/jd-project-go/commit/1edb777eae82a07ae0bf1c1d7d317d9c49d8e85d))
+* **api:** manual updates ([742f7a0](https://github.com/jd-st/jd-project-go/commit/742f7a08bd8c4dda2950f80cee0e5495ed31477f))
+* **encoder:** support bracket encoding form-data object members ([3f10364](https://github.com/jd-st/jd-project-go/commit/3f103641e37ec8a469a73d1ccf8899219124a0bc))
+
+
+### Bug Fixes
+
+* **mcp:** correct code tool API endpoint ([8fee3d0](https://github.com/jd-st/jd-project-go/commit/8fee3d08f012262b90b72942eee4fe6bbe667fad))
+* rename param to avoid collision ([301e27e](https://github.com/jd-st/jd-project-go/commit/301e27eb8d35c487e1f82690c32b7e854465daeb))
+
+
+### Chores
+
+* elide duplicate aliases ([041f9cf](https://github.com/jd-st/jd-project-go/commit/041f9cf9d2ba2f6d704008095785d0c4a3ae6cf8))
+* **internal:** codegen related update ([fe71c46](https://github.com/jd-st/jd-project-go/commit/fe71c4642b635975b60091eef6a256094a3b394c))
+
 ## 0.3.0 (2025-11-28)
 
 Full Changelog: [v0.2.0...v0.3.0](https://github.com/jd-st/jd-project-go/compare/v0.2.0...v0.3.0)
