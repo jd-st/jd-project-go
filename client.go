@@ -16,10 +16,10 @@ import (
 // interacting with the jd-project API. You should not instantiate this client
 // directly, and instead use the [NewClient] method instead.
 type Client struct {
-	Options    []option.RequestOption
-	Pets       PetService
-	Petst000re Petst000reService
-	Users      UserService
+	Options []option.RequestOption
+	Pets    PetService
+	St0re   St0reService
+	Users   UserService
 }
 
 // DefaultClientOptions read from the environment (PETSTORE_API_KEY,
@@ -45,7 +45,7 @@ func NewClient(opts ...option.RequestOption) (r Client) {
 	r = Client{Options: opts}
 
 	r.Pets = NewPetService(opts...)
-	r.Petst000re = NewPetst000reService(opts...)
+	r.St0re = NewSt0reService(opts...)
 	r.Users = NewUserService(opts...)
 
 	return
