@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.4.1 (2026-01-06)
+
+Full Changelog: [v0.4.0...v0.4.1](https://github.com/jd-st/jd-project-go/compare/v0.4.0...v0.4.1)
+
+### Bug Fixes
+
+* skip usage tests that don't work with Prism ([f0d767e](https://github.com/jd-st/jd-project-go/commit/f0d767e3a2827caee57bcf49b9735303045c305a))
+
+
+### Chores
+
+* add float64 to valid types for RegisterFieldValidator ([41f2d0c](https://github.com/jd-st/jd-project-go/commit/41f2d0c87d85e6148591f26279ebdd21e637f582))
+* **internal:** codegen related update ([4381e7c](https://github.com/jd-st/jd-project-go/commit/4381e7c6de321e0d8c87c3a680fda93e376a7a8b))
+
 ## 0.4.0 (2025-12-16)
 
 Full Changelog: [v0.3.0...v0.4.0](https://github.com/jd-st/jd-project-go/compare/v0.3.0...v0.4.0)
