@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.5.0 (2026-01-20)
+
+Full Changelog: [v0.4.1...v0.5.0](https://github.com/jd-st/jd-project-go/compare/v0.4.1...v0.5.0)
+
+### Features
+
+* **api:** api update ([1f0c8a9](https://github.com/jd-st/jd-project-go/commit/1f0c8a9f82711032472e01446c15fa3465602b0b))
+* **api:** manual updates ([38dbfd7](https://github.com/jd-st/jd-project-go/commit/38dbfd73a4b318ef62cec8e72656aa014e0ea40d))
+
+
+### Bug Fixes
+
+* **docs:** add missing pointer prefix to api.md return types ([fc5ce06](https://github.com/jd-st/jd-project-go/commit/fc5ce061a189d1772759a3dd76c0f49b450c23f1))
+
+
+### Chores
+
+* **internal:** update `actions/checkout` version ([6280558](https://github.com/jd-st/jd-project-go/commit/6280558446d3ccdb8a121c24ef6d9417e306d284))
+
 ## 0.4.1 (2026-01-06)
 
 Full Changelog: [v0.4.0...v0.4.1](https://github.com/jd-st/jd-project-go/compare/v0.4.0...v0.4.1)
