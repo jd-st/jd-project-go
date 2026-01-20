@@ -25,7 +25,7 @@ func TestUsage(t *testing.T) {
 		option.WithAPIKey("My API Key"),
 	)
 	t.Skip("Prism tests are disabled")
-	order, err := client.St000re.Orders.New(context.TODO(), jdproject.St000reOrderNewParams{})
+	order, err := client.St00000re.Orders.New(context.TODO(), jdproject.St00000reOrderNewParams{})
 	if err != nil {
 		t.Fatalf("err should be nil: %s", err.Error())
 	}
