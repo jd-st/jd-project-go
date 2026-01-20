@@ -11,33 +11,33 @@ import (
 	"github.com/jd-st/jd-project-go/option"
 )
 
-// St00reService contains methods and other services that help with interacting
+// St000reService contains methods and other services that help with interacting
 // with the jd-project API.
 //
 // Note, unlike clients, this service does not read variables from the environment
 // automatically. You should not instantiate this service directly, and instead use
-// the [NewSt00reService] method instead.
-type St00reService struct {
+// the [NewSt000reService] method instead.
+type St000reService struct {
 	Options []option.RequestOption
-	Orders  St00reOrderService
+	Orders  St000reOrderService
 }
 
-// NewSt00reService generates a new service that applies the given options to each
+// NewSt000reService generates a new service that applies the given options to each
 // request. These options are applied after the parent client's options (if there
 // is one), and before any request-specific options.
-func NewSt00reService(opts ...option.RequestOption) (r St00reService) {
-	r = St00reService{}
+func NewSt000reService(opts ...option.RequestOption) (r St000reService) {
+	r = St000reService{}
 	r.Options = opts
-	r.Orders = NewSt00reOrderService(opts...)
+	r.Orders = NewSt000reOrderService(opts...)
 	return
 }
 
 // Returns a map of status codes to quantities
-func (r *St00reService) ListInventory(ctx context.Context, opts ...option.RequestOption) (res *St00reListInventoryResponse, err error) {
+func (r *St000reService) ListInventory(ctx context.Context, opts ...option.RequestOption) (res *St000reListInventoryResponse, err error) {
 	opts = slices.Concat(r.Options, opts)
-	path := "st00re/inventory"
+	path := "st000re/inventory"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
 	return
 }
 
-type St00reListInventoryResponse map[string]int64
+type St000reListInventoryResponse map[string]int64
