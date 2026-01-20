@@ -18,7 +18,7 @@ import (
 type Client struct {
 	Options []option.RequestOption
 	Pets    PetService
-	St00re  St00reService
+	St000re St000reService
 	Users   UserService
 }
 
@@ -45,7 +45,7 @@ func NewClient(opts ...option.RequestOption) (r Client) {
 	r = Client{Options: opts}
 
 	r.Pets = NewPetService(opts...)
-	r.St00re = NewSt00reService(opts...)
+	r.St000re = NewSt000reService(opts...)
 	r.Users = NewUserService(opts...)
 
 	return
