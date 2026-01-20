@@ -15,7 +15,7 @@ import (
 	"github.com/jd-st/jd-project-go/shared"
 )
 
-func TestSt000reOrderNewWithOptionalParams(t *testing.T) {
+func TestSt00000reOrderNewWithOptionalParams(t *testing.T) {
 	t.Skip("Prism tests are disabled")
 	baseURL := "http://localhost:4010"
 	if envURL, ok := os.LookupEnv("TEST_API_BASE_URL"); ok {
@@ -28,7 +28,7 @@ func TestSt000reOrderNewWithOptionalParams(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	_, err := client.St000re.Orders.New(context.TODO(), jdproject.St000reOrderNewParams{
+	_, err := client.St00000re.Orders.New(context.TODO(), jdproject.St00000reOrderNewParams{
 		Order: shared.OrderParam{
 			ID:       jdproject.Int(10),
 			Complete: jdproject.Bool(true),
@@ -47,7 +47,7 @@ func TestSt000reOrderNewWithOptionalParams(t *testing.T) {
 	}
 }
 
-func TestSt000reOrderGet(t *testing.T) {
+func TestSt00000reOrderGet(t *testing.T) {
 	t.Skip("Prism tests are disabled")
 	baseURL := "http://localhost:4010"
 	if envURL, ok := os.LookupEnv("TEST_API_BASE_URL"); ok {
@@ -60,7 +60,7 @@ func TestSt000reOrderGet(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	_, err := client.St000re.Orders.Get(context.TODO(), 0)
+	_, err := client.St00000re.Orders.Get(context.TODO(), 0)
 	if err != nil {
 		var apierr *jdproject.Error
 		if errors.As(err, &apierr) {
@@ -70,7 +70,7 @@ func TestSt000reOrderGet(t *testing.T) {
 	}
 }
 
-func TestSt000reOrderDelete(t *testing.T) {
+func TestSt00000reOrderDelete(t *testing.T) {
 	t.Skip("Prism tests are disabled")
 	baseURL := "http://localhost:4010"
 	if envURL, ok := os.LookupEnv("TEST_API_BASE_URL"); ok {
@@ -83,7 +83,7 @@ func TestSt000reOrderDelete(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	err := client.St000re.Orders.Delete(context.TODO(), 0)
+	err := client.St00000re.Orders.Delete(context.TODO(), 0)
 	if err != nil {
 		var apierr *jdproject.Error
 		if errors.As(err, &apierr) {
