@@ -24,7 +24,7 @@ func TestUsage(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	t.Skip("Prism tests are disabled")
+	t.Skip("Mock server tests are disabled")
 	order, err := client.St00000re.Orders.New(context.TODO(), jdproject.St00000reOrderNewParams{})
 	if err != nil {
 		t.Fatalf("err should be nil: %s", err.Error())
