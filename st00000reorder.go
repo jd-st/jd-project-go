@@ -15,6 +15,8 @@ import (
 	"github.com/jd-st/jd-project-go/shared"
 )
 
+// Access to Petstore orders
+//
 // St00000reOrderService contains methods and other services that help with
 // interacting with the jd-project API.
 //

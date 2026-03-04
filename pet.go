@@ -23,6 +23,8 @@ import (
 	"github.com/jd-st/jd-project-go/packages/respjson"
 )
 
+// Everything about your Pets
+//
 // PetService contains methods and other services that help with interacting with
 // the jd-project API.
 //

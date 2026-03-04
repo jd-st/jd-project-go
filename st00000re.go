@@ -11,6 +11,8 @@ import (
 	"github.com/jd-st/jd-project-go/option"
 )
 
+// Access to Petstore orders
+//
 // St00000reService contains methods and other services that help with interacting
 // with the jd-project API.
 //
@@ -19,7 +21,8 @@ import (
 // the [NewSt00000reService] method instead.
 type St00000reService struct {
 	Options []option.RequestOption
-	Orders  St00000reOrderService
+	// Access to Petstore orders
+	Orders St00000reOrderService
 }
 
 // NewSt00000reService generates a new service that applies the given options to
