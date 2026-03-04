@@ -20,6 +20,8 @@ import (
 	"github.com/jd-st/jd-project-go/packages/respjson"
 )
 
+// Operations about user
+//
 // UserService contains methods and other services that help with interacting with
 // the jd-project API.
 //

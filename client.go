@@ -16,10 +16,13 @@ import (
 // interacting with the jd-project API. You should not instantiate this client
 // directly, and instead use the [NewClient] method instead.
 type Client struct {
-	Options   []option.RequestOption
-	Pets      PetService
+	Options []option.RequestOption
+	// Everything about your Pets
+	Pets PetService
+	// Access to Petstore orders
 	St00000re St00000reService
-	Users     UserService
+	// Operations about user
+	Users UserService
 }
 
 // DefaultClientOptions read from the environment (PETSTORE_API_KEY,
