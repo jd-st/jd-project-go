@@ -233,7 +233,7 @@ func TestPetUploadImageWithOptionalParams(t *testing.T) {
 	_, err := client.Pets.UploadImage(
 		context.TODO(),
 		0,
-		io.Reader(bytes.NewBuffer([]byte("some file contents"))),
+		io.Reader(bytes.NewBuffer([]byte("Example data"))),
 		jdproject.PetUploadImageParams{
 			AdditionalMetadata: jdproject.String("additionalMetadata"),
 		},
