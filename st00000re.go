@@ -40,7 +40,7 @@ func (r *St00000reService) ListInventory(ctx context.Context, opts ...option.Req
 	opts = slices.Concat(r.Options, opts)
 	path := "st00000re/inventory"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 type St00000reListInventoryResponse map[string]int64

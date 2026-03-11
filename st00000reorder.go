@@ -41,7 +41,7 @@ func (r *St00000reOrderService) New(ctx context.Context, body St00000reOrderNewP
 	opts = slices.Concat(r.Options, opts)
 	path := "st00000re/order"
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodPost, path, body, &res, opts...)
-	return
+	return res, err
 }
 
 // For valid response try integer IDs with value <= 5 or > 10. Other values will
@@ -50,7 +50,7 @@ func (r *St00000reOrderService) Get(ctx context.Context, orderID int64, opts ...
 	opts = slices.Concat(r.Options, opts)
 	path := fmt.Sprintf("st00000re/order/%v", orderID)
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodGet, path, nil, &res, opts...)
-	return
+	return res, err
 }
 
 // For valid response try integer IDs with value < 1000. Anything above 1000 or
@@ -60,7 +60,7 @@ func (r *St00000reOrderService) Delete(ctx context.Context, orderID int64, opts 
 	opts = append([]option.RequestOption{option.WithHeader("Accept", "*/*")}, opts...)
 	path := fmt.Sprintf("st00000re/order/%v", orderID)
 	err = requestconfig.ExecuteNewRequest(ctx, http.MethodDelete, path, nil, nil, opts...)
-	return
+	return err
 }
 
 type St00000reOrderNewParams struct {
