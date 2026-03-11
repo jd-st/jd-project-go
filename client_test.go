@@ -38,7 +38,7 @@ func TestUserAgentHeader(t *testing.T) {
 			},
 		}),
 	)
-	client.St00000re.ListInventory(context.Background())
+	_, _ = client.St00000re.ListInventory(context.Background())
 	if userAgent != fmt.Sprintf("JdProject/Go %s", internal.PackageVersion) {
 		t.Errorf("Expected User-Agent to be correct, but got: %#v", userAgent)
 	}
