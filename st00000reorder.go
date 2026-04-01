@@ -4,11 +4,11 @@ package jdproject
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"slices"
 
+	"github.com/jd-st/jd-project-go/internal/apijson"
 	shimjson "github.com/jd-st/jd-project-go/internal/encoding/json"
 	"github.com/jd-st/jd-project-go/internal/requestconfig"
 	"github.com/jd-st/jd-project-go/option"
@@ -72,5 +72,5 @@ func (r St00000reOrderNewParams) MarshalJSON() (data []byte, err error) {
 	return shimjson.Marshal(r.Order)
 }
 func (r *St00000reOrderNewParams) UnmarshalJSON(data []byte) error {
-	return json.Unmarshal(data, &r.Order)
+	return apijson.UnmarshalRoot(data, r)
 }

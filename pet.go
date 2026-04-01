@@ -283,7 +283,7 @@ func (r PetNewParams) MarshalJSON() (data []byte, err error) {
 	return shimjson.Marshal(r.Pet)
 }
 func (r *PetNewParams) UnmarshalJSON(data []byte) error {
-	return json.Unmarshal(data, &r.Pet)
+	return apijson.UnmarshalRoot(data, r)
 }
 
 type PetUpdateParams struct {
@@ -295,7 +295,7 @@ func (r PetUpdateParams) MarshalJSON() (data []byte, err error) {
 	return shimjson.Marshal(r.Pet)
 }
 func (r *PetUpdateParams) UnmarshalJSON(data []byte) error {
-	return json.Unmarshal(data, &r.Pet)
+	return apijson.UnmarshalRoot(data, r)
 }
 
 type PetFindByStatusParams struct {
