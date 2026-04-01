@@ -182,7 +182,7 @@ func (r UserNewParams) MarshalJSON() (data []byte, err error) {
 	return shimjson.Marshal(r.User)
 }
 func (r *UserNewParams) UnmarshalJSON(data []byte) error {
-	return json.Unmarshal(data, &r.User)
+	return apijson.UnmarshalRoot(data, r)
 }
 
 type UserUpdateParams struct {
@@ -194,7 +194,7 @@ func (r UserUpdateParams) MarshalJSON() (data []byte, err error) {
 	return shimjson.Marshal(r.User)
 }
 func (r *UserUpdateParams) UnmarshalJSON(data []byte) error {
-	return json.Unmarshal(data, &r.User)
+	return apijson.UnmarshalRoot(data, r)
 }
 
 type UserNewWithListParams struct {
@@ -206,7 +206,7 @@ func (r UserNewWithListParams) MarshalJSON() (data []byte, err error) {
 	return shimjson.Marshal(r.Items)
 }
 func (r *UserNewWithListParams) UnmarshalJSON(data []byte) error {
-	return json.Unmarshal(data, &r.Items)
+	return apijson.UnmarshalRoot(data, r)
 }
 
 type UserLoginParams struct {
