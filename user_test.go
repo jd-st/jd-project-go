@@ -28,13 +28,13 @@ func TestUserNewWithOptionalParams(t *testing.T) {
 	)
 	_, err := client.Users.New(context.TODO(), jdproject.UserNewParams{
 		User: jdproject.UserParam{
-			ID:         jdproject.Int(1),
-			Email:      jdproject.String("take five"),
-			FirstName:  jdproject.String("take five"),
-			LastName:   jdproject.String("take five"),
-			Password:   jdproject.String("take five"),
-			Phone:      jdproject.String("take five"),
-			Username:   jdproject.String("take five"),
+			ID:         jdproject.Int(10),
+			Email:      jdproject.String("john@email.com"),
+			FirstName:  jdproject.String("John"),
+			LastName:   jdproject.String("James"),
+			Password:   jdproject.String("12345"),
+			Phone:      jdproject.String("12345"),
+			Username:   jdproject.String("theUser"),
 			UserStatus: jdproject.Int(1),
 		},
 	})
@@ -88,13 +88,13 @@ func TestUserUpdateWithOptionalParams(t *testing.T) {
 		"username",
 		jdproject.UserUpdateParams{
 			User: jdproject.UserParam{
-				ID:         jdproject.Int(1),
-				Email:      jdproject.String("take five"),
-				FirstName:  jdproject.String("take five"),
-				LastName:   jdproject.String("take five"),
-				Password:   jdproject.String("take five"),
-				Phone:      jdproject.String("take five"),
-				Username:   jdproject.String("take five"),
+				ID:         jdproject.Int(10),
+				Email:      jdproject.String("john@email.com"),
+				FirstName:  jdproject.String("John"),
+				LastName:   jdproject.String("James"),
+				Password:   jdproject.String("12345"),
+				Phone:      jdproject.String("12345"),
+				Username:   jdproject.String("theUser"),
 				UserStatus: jdproject.Int(1),
 			},
 		},
@@ -146,13 +146,13 @@ func TestUserNewWithListWithOptionalParams(t *testing.T) {
 	)
 	_, err := client.Users.NewWithList(context.TODO(), jdproject.UserNewWithListParams{
 		Items: []jdproject.UserParam{{
-			ID:         jdproject.Int(1),
-			Email:      jdproject.String("take five"),
-			FirstName:  jdproject.String("take five"),
-			LastName:   jdproject.String("take five"),
-			Password:   jdproject.String("take five"),
-			Phone:      jdproject.String("take five"),
-			Username:   jdproject.String("take five"),
+			ID:         jdproject.Int(10),
+			Email:      jdproject.String("john@email.com"),
+			FirstName:  jdproject.String("John"),
+			LastName:   jdproject.String("James"),
+			Password:   jdproject.String("12345"),
+			Phone:      jdproject.String("12345"),
+			Username:   jdproject.String("theUser"),
 			UserStatus: jdproject.Int(1),
 		}},
 	})
