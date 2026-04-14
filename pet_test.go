@@ -30,17 +30,17 @@ func TestPetNewWithOptionalParams(t *testing.T) {
 	)
 	_, err := client.Pets.New(context.TODO(), jdproject.PetNewParams{
 		Pet: jdproject.PetParam{
-			Name:      "take five",
-			PhotoURLs: []string{"take five"},
-			ID:        jdproject.Int(1),
+			Name:      "doggie",
+			PhotoURLs: []string{"string"},
+			ID:        jdproject.Int(10),
 			Category: jdproject.CategoryParam{
 				ID:   jdproject.Int(1),
-				Name: jdproject.String("take five"),
+				Name: jdproject.String("Dogs"),
 			},
 			Status: jdproject.PetStatusAvailable,
 			Tags: []jdproject.PetTagParam{{
-				ID:   jdproject.Int(1),
-				Name: jdproject.String("take five"),
+				ID:   jdproject.Int(0),
+				Name: jdproject.String("name"),
 			}},
 		},
 	})
@@ -91,17 +91,17 @@ func TestPetUpdateWithOptionalParams(t *testing.T) {
 	)
 	_, err := client.Pets.Update(context.TODO(), jdproject.PetUpdateParams{
 		Pet: jdproject.PetParam{
-			Name:      "take five",
-			PhotoURLs: []string{"take five"},
-			ID:        jdproject.Int(1),
+			Name:      "doggie",
+			PhotoURLs: []string{"string"},
+			ID:        jdproject.Int(10),
 			Category: jdproject.CategoryParam{
 				ID:   jdproject.Int(1),
-				Name: jdproject.String("take five"),
+				Name: jdproject.String("Dogs"),
 			},
 			Status: jdproject.PetStatusAvailable,
 			Tags: []jdproject.PetTagParam{{
-				ID:   jdproject.Int(1),
-				Name: jdproject.String("take five"),
+				ID:   jdproject.Int(0),
+				Name: jdproject.String("name"),
 			}},
 		},
 	})

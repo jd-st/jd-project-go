@@ -30,12 +30,12 @@ func TestSt00000reOrderNewWithOptionalParams(t *testing.T) {
 	)
 	_, err := client.St00000re.Orders.New(context.TODO(), jdproject.St00000reOrderNewParams{
 		Order: shared.OrderParam{
-			ID:       jdproject.Int(1),
+			ID:       jdproject.Int(10),
 			Complete: jdproject.Bool(true),
-			PetID:    jdproject.Int(1),
-			Quantity: jdproject.Int(1),
+			PetID:    jdproject.Int(198772),
+			Quantity: jdproject.Int(7),
 			ShipDate: jdproject.Time(time.Now()),
-			Status:   shared.OrderStatusPlaced,
+			Status:   shared.OrderStatusApproved,
 		},
 	})
 	if err != nil {
