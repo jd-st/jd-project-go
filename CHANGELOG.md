@@ -1,5 +1,48 @@
 # Changelog
 
+## 0.6.0 (2026-05-14)
+
+Full Changelog: [v0.5.0...v0.6.0](https://github.com/jd-st/jd-project-go/compare/v0.5.0...v0.6.0)
+
+### Features
+
+* **client:** add a convenient param.SetJSON helper ([09ae720](https://github.com/jd-st/jd-project-go/commit/09ae720fe0e4759df9721ed3c41efea4e609f33f))
+
+
+### Bug Fixes
+
+* allow canceling a request while it is waiting to retry ([aef4f49](https://github.com/jd-st/jd-project-go/commit/aef4f49b2c7f13b15a25a35bd165e1e1738b385b))
+* **encoder:** correctly serialize NullStruct ([9a9ad7f](https://github.com/jd-st/jd-project-go/commit/9a9ad7fa6ea5994637229eae249c31de460360f9))
+
+
+### Chores
+
+* **ci:** skip uploading artifacts on stainless-internal branches ([ac9b6aa](https://github.com/jd-st/jd-project-go/commit/ac9b6aae9b1a8790e270b501aaab75c47f121df8))
+* **internal:** codegen related update ([e518957](https://github.com/jd-st/jd-project-go/commit/e518957562c156809a2b83534000ca54a9a7c465))
+* **internal:** codegen related update ([759c7e9](https://github.com/jd-st/jd-project-go/commit/759c7e9086e238afbe0d1e97fc2139a274efef80))
+* **internal:** codegen related update ([95bfd43](https://github.com/jd-st/jd-project-go/commit/95bfd4368964d0f6165ba721dd45453a784bfe97))
+* **internal:** codegen related update ([e8ba3c3](https://github.com/jd-st/jd-project-go/commit/e8ba3c3ab1dc9c023132fa0bf96383cc76bf6e8f))
+* **internal:** codegen related update ([1de5d46](https://github.com/jd-st/jd-project-go/commit/1de5d46b8cfcef8770ab6f9ee6b582e55cbb1622))
+* **internal:** codegen related update ([b0e116b](https://github.com/jd-st/jd-project-go/commit/b0e116ba9a9e6c498d9eb061a93d867e39d6de28))
+* **internal:** codegen related update ([e8eef7d](https://github.com/jd-st/jd-project-go/commit/e8eef7d9551107edd43e4cbdd7d864b61e07481a))
+* **internal:** codegen related update ([c3453f3](https://github.com/jd-st/jd-project-go/commit/c3453f3a9cfbc66de7f43e1911d948ee14ea75b4))
+* **internal:** codegen related update ([fae2fa8](https://github.com/jd-st/jd-project-go/commit/fae2fa8bda7579edcedc6f99b3b9d6cc3c03331c))
+* **internal:** codegen related update ([587ac17](https://github.com/jd-st/jd-project-go/commit/587ac174938bf84092ec70c0eca1015299f4c2b8))
+* **internal:** codegen related update ([0f674bd](https://github.com/jd-st/jd-project-go/commit/0f674bd2be22dec0b41887311d5ecf6545122780))
+* **internal:** codegen related update ([82503a3](https://github.com/jd-st/jd-project-go/commit/82503a327d440770fea97400a680696c9d0a604f))
+* **internal:** codegen related update ([d2c6bec](https://github.com/jd-st/jd-project-go/commit/d2c6bec3800d5f29eea63b4fba165733a93aa407))
+* **internal:** codegen related update ([417b0a0](https://github.com/jd-st/jd-project-go/commit/417b0a01cad9d027b51fa58873e0189f9a13ce45))
+* **internal:** codegen related update ([1703e25](https://github.com/jd-st/jd-project-go/commit/1703e253d5e3d258006cf6814755ab28c3126c05))
+* **internal:** codegen related update ([3b2e598](https://github.com/jd-st/jd-project-go/commit/3b2e5984444b94729287355100855d376c216230))
+* **internal:** minor cleanup ([f9d7c38](https://github.com/jd-st/jd-project-go/commit/f9d7c383c2a2fcc7a584af7a7e79598fb8b9325f))
+* **internal:** move custom custom `json` tags to `api` ([afa54a3](https://github.com/jd-st/jd-project-go/commit/afa54a387211f283c35d4eed7446db9782fc467f))
+* **internal:** remove mock server code ([0c15cec](https://github.com/jd-st/jd-project-go/commit/0c15cecf7add42d3ee691d383f13e9fdba050b14))
+* **internal:** tweak CI branches ([c5baca4](https://github.com/jd-st/jd-project-go/commit/c5baca4a8973caf73da8ce225c67351e6aacb84c))
+* **internal:** use explicit returns ([358f4e2](https://github.com/jd-st/jd-project-go/commit/358f4e29e715108d881d970a19956d89e298b146))
+* **internal:** use explicit returns in more places ([77905ed](https://github.com/jd-st/jd-project-go/commit/77905eda766cf59dc1752b489206b2518d0b5c5c))
+* update mock server docs ([3f1e095](https://github.com/jd-st/jd-project-go/commit/3f1e0950e6fcd3fa6b78f0185739ada7a7184508))
+* update placeholder string ([792d2da](https://github.com/jd-st/jd-project-go/commit/792d2da4c9975602d41263412941d453d07a578b))
+
 ## 0.5.0 (2026-01-20)
 
 Full Changelog: [v0.4.1...v0.5.0](https://github.com/jd-st/jd-project-go/compare/v0.4.1...v0.5.0)
