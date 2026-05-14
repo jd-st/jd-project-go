@@ -13,8 +13,8 @@ import (
 	"github.com/jd-st/jd-project-go/option"
 )
 
-func TestSt000reListInventory(t *testing.T) {
-	t.Skip("Prism tests are disabled")
+func TestSt00000reListInventory(t *testing.T) {
+	t.Skip("Mock server tests are disabled")
 	baseURL := "http://localhost:4010"
 	if envURL, ok := os.LookupEnv("TEST_API_BASE_URL"); ok {
 		baseURL = envURL
@@ -26,7 +26,7 @@ func TestSt000reListInventory(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithAPIKey("My API Key"),
 	)
-	_, err := client.St000re.ListInventory(context.TODO())
+	_, err := client.St00000re.ListInventory(context.TODO())
 	if err != nil {
 		var apierr *jdproject.Error
 		if errors.As(err, &apierr) {

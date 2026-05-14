@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"slices"
+	"strings"
 
 	"github.com/jd-st/jd-project-go/internal/requestconfig"
 	"github.com/jd-st/jd-project-go/option"
@@ -17,20 +18,31 @@ import (
 // directly, and instead use the [NewClient] method instead.
 type Client struct {
 	Options []option.RequestOption
-	Pets    PetService
-	St000re St000reService
-	Users   UserService
+	// Everything about your Pets
+	Pets PetService
+	// Access to Petstore orders
+	St00000re St00000reService
+	// Operations about user
+	Users UserService
 }
 
 // DefaultClientOptions read from the environment (PETSTORE_API_KEY,
 // JD_PROJECT_BASE_URL). This should be used to initialize new clients.
 func DefaultClientOptions() []option.RequestOption {
-	defaults := []option.RequestOption{option.WithEnvironmentProduction()}
+	defaults := []option.RequestOption{option.WithHTTPClient(defaultHTTPClient()), option.WithEnvironmentProduction()}
 	if o, ok := os.LookupEnv("JD_PROJECT_BASE_URL"); ok {
 		defaults = append(defaults, option.WithBaseURL(o))
 	}
 	if o, ok := os.LookupEnv("PETSTORE_API_KEY"); ok {
 		defaults = append(defaults, option.WithAPIKey(o))
+	}
+	if o, ok := os.LookupEnv("JD_PROJECT_CUSTOM_HEADERS"); ok {
+		for _, line := range strings.Split(o, "\n") {
+			colon := strings.Index(line, ":")
+			if colon >= 0 {
+				defaults = append(defaults, option.WithHeader(strings.TrimSpace(line[:colon]), strings.TrimSpace(line[colon+1:])))
+			}
+		}
 	}
 	return defaults
 }
@@ -45,7 +57,7 @@ func NewClient(opts ...option.RequestOption) (r Client) {
 	r = Client{Options: opts}
 
 	r.Pets = NewPetService(opts...)
-	r.St000re = NewSt000reService(opts...)
+	r.St00000re = NewSt00000reService(opts...)
 	r.Users = NewUserService(opts...)
 
 	return
